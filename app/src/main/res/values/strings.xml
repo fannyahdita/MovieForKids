@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">MovieForKids</string>
+    <string name="app_name_toolbar">Movie For Kids</string>
+
+    <string name="title_abominable">Abominable</string>
+    <string name="year_abominable">2019</string>
+    <string name="director_abominable">Jill Culton</string>
+    <string name="synopsis_abominable">Yi (Chloe Bennet) never meets, she will meet Yeti on the roof of her apartment building in Shanghai. Together with friends, Jin (Tenzing Norgay Trainor) and Peng (Albert Tsai), they named this young Yeti Everest. The exciting adventure begins when Yi and his friends manage to recover, however, their journey will not be easy because Burnish (Eddie Izzard), a wealthy man who has ever tried Everest.</string>
+    <string name="trailer_abominable">https://www.youtube.com/watch?v=Ap0NRJD-2ts</string>
+
+    //secret life of pets 2
+    <string name="title_slop2">Secret Life of Pets 2</string>
+    <string name="year_slop2">2019</string>
+    <string name="director_slop2">Chris Renaud</string>
+    <string name="synopsis_slop2">The terrier Max tries to deal with major changes in his life. The owner is now married and has a baby, Liam. Max became so protective of the baby that it caused symptoms when he was agitated. While on a family vacation to the farm, Max and Duke mutters meet dog-resisting cows, wild foxes, and creepy turkeys, all of which only make Max more nervous. Fortunately, Max got help from an elderly dog ​​breeder, Rooster, who encouraged Max to get rid of the symptoms he had, find a leader in him, and no longer be too protective of Liam. Meanwhile, while the owner is away, the pomerania Gidget tries to secure Max\'s favorite toy from a cat-filled apartment, with the help of his cat friend Chloe, who is fond of playing with cat plants. And the crazy but funny rabbit Snowball increasingly fantasized that he had superpowers after his owner, Molly began to wear superhero pajamas on him. However, when the brave Shi tzu dog Daisy asks Snowball for a dangerous mission, Snowball must really muster up the courage to become a hero he can only imagine. Can Max, Snowball, Gidget, and others find the courage in themselves to fight their biggest fear?</string>
+    <string name="trailer_slop2">https://www.youtube.com/watch?v=EUZpVWepAQw</string>
+
+    //The Lion King
+    <string name="title_lionking">The Lion King</string>
+    <string name="year_lionking">2019</string>
+    <string name="director_lionking">Jon Favreu</string>
+    <string name="synopsis_lionking">Simba had to run away and save herself from the trap of her uncle, Scar, who was secretly eyeing her father\'s throne. As an adult, with the help of Timon and Pumbaa, he returned to seize his rights.</string>
+    <string name="trailer_lionking">https://www.youtube.com/watch?v=7TavVZMewpY</string>
+
+    //Toy Story 4
+    <string name="title_toystory">Toy Story 4</string>
+    <string name="year_toystory">2019</string>
+    <string name="director_toystory">Josh Cooley</string>
+    <string name="synopsis_toystory">Woody always feels confident about his position in the world, and his priority is to look after his child, be it Andy or Bonnie. But when Bonnie adds a new toy named Forky in her toy room, a trip with old and new friends will bring Woody to witness how big the world is for a toy like her.</string>
+    <string name="trailer_toystory">https://www.youtube.com/watch?v=wmiIUN-7qhE</string>
+
+    //movie detail
+    <string name="movie_year"><![CDATA[<b>Release year:</b> %s]]></string>
+    <string name="movie_director"><![CDATA[<b>Director:</b> %s]]></string>
+    <string name="movie_synopsis"><![CDATA[<b>Synopsis:</b> %s]]></string>
+    <string name="movie_trailer"><b>Trailer:</b></string>
+    <string name="upload_photo"><b>Upload photo with your kid(s):</b></string>
+    <string name="watch_trailer">Watch Trailer</string>
+    <string name="play_video">Play Trailer</string>
+
+    <string name="change_lang">Change language to %s</string>
+
+</resources>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MovieForKids</string>
+    <string name="app_name_toolbar">Movie For Kids</string>
+
+    //hardcore database
+    //abominable
+    <string name="title_abominable">Abominable</string>
+    <string name="year_abominable">2019</string>
+    <string name="director_abominable">Jill Culton</string>
+    <string name="synopsis_abominable">Yi (Chloe Bennet) tidak pernah menduga bahwa ia akan bertemu dengan Yeti di atap gedung apartemennya di Shanghai. Bersama teman-temannya, Jin (Tenzing Norgay Trainor) dan Peng (Albert Tsai), mereka menamakan Yeti muda ini Everest. Petualangan seru dimulai saat Yi dan kawan-kawannya berusaha mengembalikan Everest ke keluarganya. Namun, perjalanan mereka tidak akan mudah karena Burnish (Eddie Izzard), seorang pria kaya raya berusaha menangkap Everest.</string>
+    <string name="trailer_abominable">https://www.youtube.com/watch?v=Ap0NRJD-2ts</string>
+
+    //secret life of pets 2
+    <string name="title_slop2">Secret Life of Pets 2</string>
+    <string name="year_slop2">2019</string>
+    <string name="director_slop2">Chris Renaud</string>
+    <string name="synopsis_slop2">Anjing terrier Max mencoba berhadapan dengan berbagai perubahan besar dalam hidupnya. Pemiliknya kini telah menikah dan memiliki seorang bayi, Liam. Max menjadi sangat protektif terhadap bayi tersebut sampai-sampai menimbulkan gejala saat ia gelisah. Ketika ikut dalam liburan keluarga ke peternakan, Max dan anjing kampung Duke bertemu dengan sapi-sapi penolak anjing, rubah-rubah buas, dan kalkun menyeramkan, yang semuanya hanya membuat Max semakin senewen. Untungnya, Max mendapat bantuan dari seekor anjing peternak sepuh, Rooster, yang mendorong Max untuk menghilangkan gejala-gejala yang ia miliki, menemukan sosok pemimpin dalam dirinya, dan tak lagi terlalu protektif terhadap Liam. Sementara itu, ketika pemiliknya sedang pergi, anjing pomerania Gidget berusaha mengamankan mainan terfavorit Max dari dalam apartemen yang dipenuhi kucing, dengan bantuan dari kawannya si kucing Chloe, yang sedang gemar bermain dengan tanaman kucingan. Dan si kelinci gila namun lucu Snowball makin berkhayal tinggi bahwa ia memiliki kekuatan super setelah pemiliknya, Molly mulai memakaikan piyama superhero pada dirinya. Namun, ketika si anjing shi tzu pemberani Daisy meminta bantuan Snowball untuk sebuah misi berbahaya, Snowball harus benar-benar mengumpulkan keberanian agar menjadi pahlawan yang ia hanya bisa bayangkan. Dapatkah Max, Snowball, Gidget, dan yang lainnya menemukan keberanian dalam diri demi melawan rasa takut terbesar mereka?</string>
+    <string name="trailer_slop2">https://www.youtube.com/watch?v=EUZpVWepAQw</string>
+
+    //The Lion King
+    <string name="title_lionking">The Lion King</string>
+    <string name="year_lionking">2019</string>
+    <string name="director_lionking">Jon Favreu</string>
+    <string name="synopsis_lionking">Simba harus lari dan menyelamatkan diri dari jebakan pamannya, Scar, yang diam-diam mengincar tahta ayahnya. Setelah dewasa, dengan bantuan Timon dan Pumbaa, dia pun kembali untuk merebut haknya.</string>
+    <string name="trailer_lionking">https://www.youtube.com/watch?v=7TavVZMewpY</string>
+
+    //Toy Story 4
+    <string name="title_toystory">Toy Story 4</string>
+    <string name="year_toystory">2019</string>
+    <string name="director_toystory">Josh Cooley</string>
+    <string name="synopsis_toystory">Woody selalu merasa percaya diri akan posisinya di dunia, dan prioritasnya adalah menjaga anaknya, baik itu Andy atau Bonnie. Namun ketika Bonnie menambahkan sebuah mainan baru bernama Forky dalam kamar mainannya, sebuah pengembaraan bersama teman-teman lama dan baru akan membawa Woody untuk menyaksikan betapa besarnya dunia ini bagi sebuah mainan seperti dirinya.</string>
+    <string name="trailer_toystory">https://www.youtube.com/watch?v=wmiIUN-7qhE</string>
+
+    //movie detail
+    <string name="movie_year"><![CDATA[<b>Tahun rilis:</b> %s]]></string>
+    <string name="movie_director"><![CDATA[<b>Sutradara:</b> %s]]></string>
+    <string name="movie_synopsis"><![CDATA[<b>Sinopsis:</b> %s]]></string>
+    <string name="movie_trailer"><![CDATA[<b>Trailer:</b> %s]]></string>
+    <string name="upload_photo"><b>Unggah foto dengan anak:</b></string>
+    <string name="watch_trailer">Watch Trailer</string>
+    <string name="play_video">Putar Trailer</string>
+
+    <string name="change_lang">Ganti bahasa ke %s</string>
+</resources>
