@@ -25,7 +25,7 @@ class MovieDetailFragment : Fragment() {
     private lateinit var viewModel: MovieViewModel
     private var trailerId = ""
     private var movieId = 0
-    private var apiKey = "AIzaSyAOKpligJrMKe-mS769IX438NPs5tN6flM"
+    private var apiKey = "YOUR_API_KEY"
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

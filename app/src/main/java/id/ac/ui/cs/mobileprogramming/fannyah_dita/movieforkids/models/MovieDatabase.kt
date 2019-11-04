@@ -63,7 +63,7 @@ class PopulateDbAsyncTask(db: MovieDatabase?) : AsyncTask<Unit, Unit, Unit>() {
                 year = "2019",
                 director = "Jill Culton",
                 synopsis = "Yi (Chloe Bennet) never meets, she will meet Yeti on the roof of her apartment building in Shanghai. Together with friends, Jin (Tenzing Norgay Trainor) and Peng (Albert Tsai), they named this young Yeti Everest. The exciting adventure begins when Yi and his friends manage to recover, however, their journey will not be easy because Burnish (Eddie Izzard), a wealthy man who has ever tried Everest.",
-                trailers = "https://www.youtube.com/watch?v=Ap0NRJD-2ts"
+                trailers = "https://www.youtube.com/watch?v=EUZpVWepAQw"
             )
         )
 
