@@ -3,7 +3,7 @@
     <string name="app_name">MovieForKids</string>
     <string name="app_name_toolbar">Movie For Kids</string>
 
-    //hardcore database
+    //hardcode database
     //abominable
     <string name="title_abominable">Abominable</string>
     <string name="year_abominable">2019</string>
@@ -36,7 +36,7 @@
     <string name="movie_year"><![CDATA[<b>Tahun rilis:</b> %s]]></string>
     <string name="movie_director"><![CDATA[<b>Sutradara:</b> %s]]></string>
     <string name="movie_synopsis"><![CDATA[<b>Sinopsis:</b> %s]]></string>
-    <string name="movie_trailer"><![CDATA[<b>Trailer:</b> %s]]></string>
+    <string name="movie_trailer"><b>Trailer:</b></string>
     <string name="upload_photo"><b>Unggah foto dengan anak:</b></string>
     <string name="watch_trailer">Watch Trailer</string>
     <string name="play_video">Putar Trailer</string>
