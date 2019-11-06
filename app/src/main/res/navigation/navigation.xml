@@ -12,6 +12,9 @@
         <action
             android:id="@+id/action_to_detail_fragment"
             app:destination="@id/movie_detail_fragment"/>
+        <action
+            android:id="@+id/action_to_gallery"
+            app:destination="@id/photo_gallery_fragment"/>
     </fragment>
     <fragment
         android:id="@+id/movie_detail_fragment"
@@ -24,6 +27,14 @@
             android:name="id"
             android:defaultValue="0"
             app:argType="integer"/>
+    </fragment>
+    <fragment
+        android:id="@+id/photo_gallery_fragment"
+        android:name="id.ac.ui.cs.mobileprogramming.fannyah_dita.movieforkids.view.fragment.PhotoGalleryFragment"
+        android:label="PhotoGalleryFragment">
+        <action
+            android:id="@+id/action_to_list_fragment_2"
+            app:destination="@id/movie_list_fragment"/>
     </fragment>
 
 

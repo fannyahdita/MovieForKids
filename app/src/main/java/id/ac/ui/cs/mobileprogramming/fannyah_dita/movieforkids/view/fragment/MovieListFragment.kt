@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
+import androidx.navigation.Navigation
 import androidx.recyclerview.widget.LinearLayoutManager
 import id.ac.ui.cs.mobileprogramming.fannyah_dita.movieforkids.R
 import id.ac.ui.cs.mobileprogramming.fannyah_dita.movieforkids.models.Movie
@@ -38,7 +39,13 @@ class MovieListFragment : Fragment() {
         movies_recyclerview.layoutManager = LinearLayoutManager(context)
         movies_recyclerview.adapter = movieAdapter
 
+        button_gallery.setOnClickListener {
+            Navigation.findNavController(it)
+                .navigate(MovieListFragmentDirections.actionToGallery())
+        }
+
         observeViewModel()
+
     }
 
     private fun observeViewModel() {

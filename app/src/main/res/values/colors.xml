@@ -6,4 +6,6 @@
 
     <color name="pink">#FB8D83</color>
     <color name="grey">#C4C4C4</color>
+
+    <color name="separator">#e5e5e5</color>
 </resources>

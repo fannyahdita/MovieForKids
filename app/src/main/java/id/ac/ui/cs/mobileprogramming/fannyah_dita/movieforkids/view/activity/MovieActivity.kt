@@ -1,8 +1,6 @@
 package id.ac.ui.cs.mobileprogramming.fannyah_dita.movieforkids.view.activity
 
-import android.content.res.Configuration
 import android.os.Bundle
-import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import id.ac.ui.cs.mobileprogramming.fannyah_dita.movieforkids.R
 import id.ac.ui.cs.mobileprogramming.fannyah_dita.movieforkids.helper.LocaleHelper
@@ -11,8 +9,6 @@ import java.util.*
 
 
 class MovieActivity : AppCompatActivity() {
-
-    private lateinit var locale : Locale
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

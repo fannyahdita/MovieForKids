@@ -10,7 +10,7 @@ import id.ac.ui.cs.mobileprogramming.fannyah_dita.movieforkids.models.Movie
 import id.ac.ui.cs.mobileprogramming.fannyah_dita.movieforkids.view.fragment.MovieListFragmentDirections
 import kotlinx.android.synthetic.main.item_movie_list.view.*
 
-class MovieAdapter: RecyclerView.Adapter<MovieAdapter.ViewHolder>(){
+class MovieAdapter : RecyclerView.Adapter<MovieAdapter.ViewHolder>() {
 
     private var movie: List<Movie> = ArrayList()
 
@@ -25,7 +25,7 @@ class MovieAdapter: RecyclerView.Adapter<MovieAdapter.ViewHolder>(){
         holder.view.movie_image_list.setImageResource(currentMovie.posterRes)
         holder.view.movie_title_list.text = currentMovie.title
         holder.view.movie_year_list.text = currentMovie.year
-        holder.view.setOnClickListener{
+        holder.view.setOnClickListener {
             Navigation.findNavController(it)
                 .navigate(MovieListFragmentDirections.actionToDetailFragment().setId(position))
         }

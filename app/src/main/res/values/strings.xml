@@ -34,10 +34,22 @@
     <string name="movie_director"><![CDATA[<b>Director:</b> %s]]></string>
     <string name="movie_synopsis"><![CDATA[<b>Synopsis:</b> %s]]></string>
     <string name="movie_trailer"><b>Trailer:</b></string>
-    <string name="upload_photo"><b>Upload photo with your kid(s):</b></string>
+    <string name="upload_photo"><b>Upload kidsPhoto with your kid(s):</b></string>
     <string name="watch_trailer">Watch Trailer</string>
     <string name="play_video">Play Trailer</string>
+    <string name="change_photo"><u>change photo</u></string>
+    <string name="add_photo">add photo</string>
+    <string name="submit_photo">submit photo</string>
 
-    <string name="change_lang">Change language to %s</string>
+    //movie list
+    <string name="to_gallery">Go to gallery</string>
+    <string name="list_title">Recommendation(s) for you</string>
+
+    //gallery
+    <string name="empty_text">Oops! You\'ve got no photo</string>
+
+    //Toast
+    <string name="photo_permission_denied">Permission Denied, please allow this app to access your gallery</string>
+    <string name="photo_saved">Your photo is saved! Hope you and your kid(s) had a great movie day!</string>
 
 </resources>
