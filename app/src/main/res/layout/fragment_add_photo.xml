@@ -105,6 +105,8 @@
             android:id="@+id/movie_edittext"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:hint="@string/title_lionking"
+            android:fontFamily="@font/quicksand"
             app:layout_constraintTop_toBottomOf="@id/movie_textview" />
 
         <TextView
@@ -124,6 +126,8 @@
             android:layout_height="wrap_content"
             android:inputType="textMultiLine"
             android:scrollbars="vertical"
+            android:hint="@string/desc_hint"
+            android:fontFamily="@font/quicksand"
             app:layout_constraintTop_toBottomOf="@id/describe_textview" />
 
         <Button

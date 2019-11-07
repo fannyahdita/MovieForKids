@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="70dp"
+    android:layout_marginEnd="10dp">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/quicksand_bold"
+        android:text="@string/add_rating_title"
+        android:textColor="@color/pink"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/movie_rating_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/quicksand_bold"
+        android:text="@string/movie_title_addphoto"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title" />
+
+    <EditText
+        android:id="@+id/movie_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/title_lionking"
+        android:fontFamily="@font/quicksand"
+        app:layout_constraintTop_toBottomOf="@id/movie_rating_textview" />
+
+    <TextView
+        android:id="@+id/rate_rating_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/quicksand_bold"
+        android:text="@string/rate_question"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/movie_edittext" />
+
+    <LinearLayout
+        android:id="@+id/rate_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/rate_rating_textview"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/rate_edittext"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/quicksand"
+            android:layout_marginTop="20dp"
+            android:inputType="number"
+            android:textSize="55sp"/>
+
+        <TextView
+            android:id="@+id/rate_per_five"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/per_five"
+            android:textColor="@color/soft_pink"
+            android:layout_marginTop="30dp"
+            android:textSize="50sp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_submit_rating"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@color/soft_pink"
+        android:fontFamily="@font/quicksand_bold"
+        android:text="@string/desc_save"
+        android:textColor="@color/dark_grey"
+        android:textSize="18sp"
+        android:visibility="visible"
+        app:layout_constraintTop_toBottomOf="@id/rate_container" />
+</androidx.constraintlayout.widget.ConstraintLayout>

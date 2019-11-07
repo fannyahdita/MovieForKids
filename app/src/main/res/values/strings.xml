@@ -48,16 +48,25 @@
     //gallery
     <string name="empty_text">Oops! You\'ve got no photo</string>
     <string name="desc_photo_detail"><![CDATA[<b>Description:</b> %s]]></string>
+    <string name="rate_movie">Rate movie</string>
 
     //add photo
     <string name="desc_add_photo">Describe the photo:</string>
     <string name="desc_save">Save</string>
     <string name="movie_title_addphoto">What movie did you just watch?</string>
+    <string name="desc_hint">I watched this movie with my son. He was very excited to see a lot of his favorite animals.</string>
+
+    //add movieRate
+    <string name="add_rating_title">Rate movie you just watched!</string>
+    <string name="rate_question">How would you rate the movie?</string>
+    <string name="per_five">/5</string>
+    <string name="per_five_show">%s/5</string>
 
     //Toast
     <string name="photo_permission_denied">Permission Denied, please allow this app to access your gallery</string>
     <string name="photo_saved">Your photo is saved! Hope you and your kid(s) had a great movie day!</string>
     <string name="submit_photo_toast">You have to fill everything!</string>
+    <string name="submit_rating_toast">You have to fill everything!</string>
 
     //notification
     <string name="notif_welcome">"Welcome to MovieForKids! Let's watch something today"</string>

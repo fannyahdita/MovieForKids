@@ -41,6 +41,9 @@
         <action
             android:id="@+id/action_to_detail_photo"
             app:destination="@id/detail_photo_fragment"/>
+        <action
+            android:id="@+id/action_to_add_rating"
+            app:destination="@id/add_rating_fragment"/>
     </fragment>
     <fragment
         android:id="@+id/add_photo_fragment"
@@ -62,6 +65,15 @@
             android:name="id"
             android:defaultValue="0"
             app:argType="integer"/>
+    </fragment>
+    <fragment
+        android:id="@+id/add_rating_fragment"
+        android:name="id.ac.ui.cs.mobileprogramming.fannyah_dita.movieforkids.view.fragment.AddRatingFragment"
+        android:label="AddPhotoFragment">
+        <action
+            android:id="@+id/action_to_gallery_4"
+            app:destination="@id/photo_gallery_fragment"
+            app:popUpTo="@+id/photo_gallery_fragment" />
     </fragment>
 
 </navigation>

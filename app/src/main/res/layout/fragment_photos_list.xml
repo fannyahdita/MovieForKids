@@ -10,14 +10,29 @@
 
     <Button
         android:id="@+id/button_add_photo_list"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
+        app:layout_constraintHorizontal_weight="1"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"
         android:background="@color/soft_pink"
         android:text="@string/add_photo"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/button_add_rate_list"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_add_rate_list"
+        android:layout_width="0dp"
+        app:layout_constraintHorizontal_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@color/soft_pink"
+        android:text="@string/rate_movie"
+        app:layout_constraintStart_toEndOf="@id/button_add_photo_list"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/empty_photo_container"
@@ -56,6 +71,20 @@
         android:layout_marginTop="10dp"
         android:background="@color/separator"
         app:layout_constraintTop_toBottomOf="@id/button_add_photo_list" />
+    
+<!--    <androidx.viewpager.widget.ViewPager-->
+<!--        android:id="@+id/viewpager_gallery"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/separator">-->
+
+<!--        <android.support.design.widget.TabLayout-->
+<!--            android:id="@+id/tabs"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="top"/>-->
+
+<!--    </androidx.viewpager.widget.ViewPager>-->
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerview_photos"

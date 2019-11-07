@@ -8,50 +8,38 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
-import androidx.navigation.Navigation
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import id.ac.ui.cs.mobileprogramming.fannyah_dita.movieforkids.R
 import id.ac.ui.cs.mobileprogramming.fannyah_dita.movieforkids.models.KidsPhoto
 import id.ac.ui.cs.mobileprogramming.fannyah_dita.movieforkids.view.adapter.PhotoGalleryAdapter
 import id.ac.ui.cs.mobileprogramming.fannyah_dita.movieforkids.viewmodel.KidsPhotoViewModel
-import kotlinx.android.synthetic.main.fragment_photos_list.*
+import kotlinx.android.synthetic.main.fragment_recyclerview_gallery.*
 import kotlin.math.roundToInt
 
-class PhotoGalleryFragment : Fragment() {
+class PhotosFragment : Fragment() {
 
     companion object {
-        fun newInstance() = PhotoGalleryFragment()
+        fun newInstance() =
+            PhotosFragment()
     }
 
     private lateinit var kidsPhotoViewModel: KidsPhotoViewModel
     private var photoGalleryAdapter = PhotoGalleryAdapter()
-    private var length = 0
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_photos_list, container, false)
+        return inflater.inflate(R.layout.fragment_recyclerview_gallery, container, false)
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
 
         kidsPhotoViewModel = ViewModelProviders.of(this).get(KidsPhotoViewModel::class.java)
-
         observeViewModel()
-
-        button_add_photo_list.setOnClickListener {
-            Navigation.findNavController(it)
-                .navigate(PhotoGalleryFragmentDirections.actionToAddPhoto())
-        }
-
-        button_add_rate_list.setOnClickListener {
-            Navigation.findNavController(it)
-                .navigate(PhotoGalleryFragmentDirections.actionToAddRating())
-        }
     }
 
     private fun observeViewModel() {
@@ -73,14 +61,14 @@ class PhotoGalleryFragment : Fragment() {
         val columns = (dpWidth / 150).roundToInt()
 
         if (length > 0) {
-            recyclerview_photos.visibility = View.VISIBLE
+            recyclerview.visibility = View.VISIBLE
             empty_photo_container.visibility = View.GONE
 
-            recyclerview_photos.layoutManager =
+            recyclerview.layoutManager =
                 GridLayoutManager(activity, columns) as RecyclerView.LayoutManager?
-            recyclerview_photos.adapter = photoGalleryAdapter
+            recyclerview.adapter = photoGalleryAdapter
         } else {
-            recyclerview_photos.visibility = View.GONE
+            recyclerview.visibility = View.GONE
             empty_photo_container.visibility = View.VISIBLE
         }
     }
