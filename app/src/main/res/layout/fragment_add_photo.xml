@@ -10,7 +10,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:layout_marginTop="70dp"
-        android:layout_marginEnd="10dp">
+        android:layout_marginEnd="10dp"
+        android:paddingBottom="70dp">
 
         <TextView
             android:id="@+id/title"
@@ -27,7 +28,9 @@
             android:id="@+id/image_container"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="10dp"
+            app:cardElevation="4dp"
+            app:layout_constraintCircleRadius="5dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/title">
@@ -76,8 +79,11 @@
             android:id="@+id/button_change_photo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
             android:fontFamily="@font/quicksand_bold"
             android:text="@string/change_photo"
+            android:textColor="@color/soft_pink"
+            android:textSize="18sp"
             android:visibility="gone"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -88,7 +94,7 @@
             android:id="@+id/movie_textview"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="75dp"
+            android:layout_marginTop="110dp"
             android:fontFamily="@font/quicksand_bold"
             android:text="@string/movie_title_addphoto"
             android:textSize="18sp"
@@ -125,13 +131,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="80dp"
-            android:enabled="true"
             android:background="@color/soft_pink"
+            android:enabled="true"
             android:fontFamily="@font/quicksand_bold"
             android:text="@string/desc_save"
-            android:visibility="gone"
             android:textColor="@color/dark_grey"
             android:textSize="18sp"
+            android:visibility="gone"
             app:layout_constraintTop_toBottomOf="@id/desc_edittext" />
 
         <Button
@@ -139,8 +145,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="80dp"
-            android:enabled="false"
             android:background="@color/grey"
+            android:enabled="false"
             android:fontFamily="@font/quicksand_bold"
             android:text="@string/desc_save"
             android:textColor="@color/dark_grey"

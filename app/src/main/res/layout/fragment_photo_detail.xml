@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -27,15 +27,26 @@
             app:layout_constraintTop_toTopOf="parent"
             tools:text="MALEFICENT" />
 
-        <ImageView
-            android:id="@+id/kidsphoto_detail"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
+        <androidx.cardview.widget.CardView
+            android:id="@+id/photo_container_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:src="@drawable/abominable"
+            app:cardElevation="4dp"
+            app:cardCornerRadius="5dp"
+            app:cardUseCompatPadding="true"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/title_photo_detail" />
+            app:layout_constraintTop_toBottomOf="@id/title_photo_detail">
+
+            <ImageView
+                android:id="@+id/kidsphoto_detail"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop"
+                tools:src="@drawable/abominable" />
+
+        </androidx.cardview.widget.CardView>
 
         <TextView
             android:id="@+id/desc_photo_detail"
@@ -45,7 +56,7 @@
             android:fontFamily="@font/quicksand"
             android:textSize="18sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/kidsphoto_detail"
+            app:layout_constraintTop_toBottomOf="@+id/photo_container_detail"
             tools:text="@string/desc_photo_detail" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>

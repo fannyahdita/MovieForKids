@@ -48,7 +48,8 @@
         android:label="AddPhotoFragment">
         <action
             android:id="@+id/action_to_gallery_2"
-            app:destination="@id/photo_gallery_fragment"/>
+            app:destination="@id/photo_gallery_fragment"
+            app:popUpTo="@+id/photo_gallery_fragment" />
     </fragment>
     <fragment
         android:id="@+id/detail_photo_fragment"

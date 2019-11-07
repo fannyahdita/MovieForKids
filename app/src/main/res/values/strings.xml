@@ -60,6 +60,6 @@
     <string name="submit_photo_toast">You have to fill everything!</string>
 
     //notification
-    <string name="notif_welcome">Welcome to MovieForKids!</string>
+    <string name="notif_welcome">"Welcome to MovieForKids! Let's watch something today"</string>
 
 </resources>

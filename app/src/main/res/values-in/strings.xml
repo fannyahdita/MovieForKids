@@ -63,6 +63,6 @@
     <string name="submit_photo_toast">Kamu harus mengisi semua field</string>
 
     //Notification
-    <string name="notif_welcome">Selamat datang di MovieForKids!</string>
+    <string name="notif_welcome">Selamat datang di MovieForKids! Ayo kita nonton sesuatu hari ini</string>
 
 </resources>
