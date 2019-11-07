@@ -4,7 +4,10 @@ import androidx.room.Entity
 import androidx.room.PrimaryKey
 
 @Entity(tableName = "photo")
-data class KidsPhoto(var imageUri: String?) {
+data class KidsPhoto(
+    var imageUri: String,
+    var description: String,
+    var movieTitle: String) {
     @PrimaryKey(autoGenerate = true)
     var id: Int = 0
 }

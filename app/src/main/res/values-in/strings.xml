@@ -40,9 +40,9 @@
     <string name="upload_photo"><b>Unggah foto dengan anak:</b></string>
     <string name="watch_trailer">Watch Trailer</string>
     <string name="play_video">Putar Trailer</string>
-    <string name="change_photo">ganti foto</string>
-    <string name="add_photo">tambah foto</string>
-    <string name="submit_photo">submit photo</string>
+    <string name="change_photo">Ganti Foto</string>
+    <string name="add_photo">Tambah Foto</string>
+    <string name="submit_photo">Submit Photo</string>
 
     //movie list
     <string name="to_gallery">Menuju galeri</string>
@@ -50,9 +50,19 @@
 
     //gallery
     <string name="empty_text">Oops! Kamu tidak punya foto</string>
+    <string name="desc_photo_detail"><![CDATA[<b>Deskripsi:</b> %s]]></string>
+
+    //add photo
+    <string name="desc_add_photo">Deskripsikan fotomu:</string>
+    <string name="desc_save">Simpan</string>
+    <string name="movie_title_addphoto">Apa judul film yang baru Anda tonton?</string>
 
     //Toast
     <string name="photo_permission_denied">Akses ditolak, mohon ubah pengaturan agar aplikasi dapat mengakses galeri</string>
     <string name="photo_saved">Foto telah disimpan! Semoga kamu dan si kecil mendapatkan pengalaman menonton yang menyenangkan!</string>
+    <string name="submit_photo_toast">Kamu harus mengisi semua field</string>
+
+    //Notification
+    <string name="notif_welcome">Selamat datang di MovieForKids!</string>
 
 </resources>

@@ -35,7 +35,32 @@
         <action
             android:id="@+id/action_to_list_fragment_2"
             app:destination="@id/movie_list_fragment"/>
+        <action
+            android:id="@+id/action_to_add_photo"
+            app:destination="@id/add_photo_fragment"/>
+        <action
+            android:id="@+id/action_to_detail_photo"
+            app:destination="@id/detail_photo_fragment"/>
     </fragment>
-
+    <fragment
+        android:id="@+id/add_photo_fragment"
+        android:name="id.ac.ui.cs.mobileprogramming.fannyah_dita.movieforkids.view.fragment.AddPhotoFragment"
+        android:label="AddPhotoFragment">
+        <action
+            android:id="@+id/action_to_gallery_2"
+            app:destination="@id/photo_gallery_fragment"/>
+    </fragment>
+    <fragment
+        android:id="@+id/detail_photo_fragment"
+        android:name="id.ac.ui.cs.mobileprogramming.fannyah_dita.movieforkids.view.fragment.DetailPhotoFragment"
+        android:label="DetailPhotoFragment">
+        <action
+            android:id="@+id/action_to_gallery_3"
+            app:destination="@id/photo_gallery_fragment"/>
+        <argument
+            android:name="id"
+            android:defaultValue="0"
+            app:argType="integer"/>
+    </fragment>
 
 </navigation>

@@ -22,8 +22,8 @@ class KidsPhotoRepository(application: Application) {
         InsertPhotoAsyncTask(kidsPhotoDao).execute(kidsPhoto)
     }
 
-    fun getPhoto(photoId: Int): LiveData<KidsPhoto> {
-        photo = kidsPhotoDao.getPhoto(photoId)
+    fun detailPhoto(photoId: Int): LiveData<KidsPhoto> {
+        photo = kidsPhotoDao.detailPhoto(photoId)
         return photo
     }
 

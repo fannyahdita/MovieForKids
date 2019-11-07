@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="12dp"
+        android:fillViewport="true"
+        android:paddingBottom="100dp"
+        tools:context=".view.fragment.MovieDetailFragment"
+        tools:ignore="RtlHardcoded">
+
+        <TextView
+            android:id="@+id/title_photo_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/quicksand_bold"
+            android:textColor="@color/pink"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="MALEFICENT" />
+
+        <ImageView
+            android:id="@+id/kidsphoto_detail"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/abominable"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/title_photo_detail" />
+
+        <TextView
+            android:id="@+id/desc_photo_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/quicksand"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/kidsphoto_detail"
+            tools:text="@string/desc_photo_detail" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

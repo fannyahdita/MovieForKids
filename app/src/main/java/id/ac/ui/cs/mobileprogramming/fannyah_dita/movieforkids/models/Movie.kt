@@ -10,7 +10,7 @@ data class Movie(
     var year: String,
     var director: String,
     var synopsis: String,
-    var trailers: String
+    var trailerId: String
 ) {
     @PrimaryKey(autoGenerate = true)
     var id: Int = 0

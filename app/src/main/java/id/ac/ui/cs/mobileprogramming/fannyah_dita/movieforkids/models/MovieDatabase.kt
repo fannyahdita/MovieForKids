@@ -52,7 +52,7 @@ class PopulateDbAsyncTask(db: MovieDatabase?) : AsyncTask<Unit, Unit, Unit>() {
                 year = "2019",
                 director = "Jill Culton",
                 synopsis = "Yi (Chloe Bennet) never meets, she will meet Yeti on the roof of her apartment building in Shanghai. Together with friends, Jin (Tenzing Norgay Trainor) and Peng (Albert Tsai), they named this young Yeti Everest. The exciting adventure begins when Yi and his friends manage to recover, however, their journey will not be easy because Burnish (Eddie Izzard), a wealthy man who has ever tried Everest.",
-                trailers = "https://www.youtube.com/watch?v=Ap0NRJD-2ts"
+                trailerId = "Ap0NRJD-2ts"
             )
         )
 
@@ -63,7 +63,7 @@ class PopulateDbAsyncTask(db: MovieDatabase?) : AsyncTask<Unit, Unit, Unit>() {
                 year = "2019",
                 director = "Jill Culton",
                 synopsis = "Yi (Chloe Bennet) never meets, she will meet Yeti on the roof of her apartment building in Shanghai. Together with friends, Jin (Tenzing Norgay Trainor) and Peng (Albert Tsai), they named this young Yeti Everest. The exciting adventure begins when Yi and his friends manage to recover, however, their journey will not be easy because Burnish (Eddie Izzard), a wealthy man who has ever tried Everest.",
-                trailers = "https://www.youtube.com/watch?v=EUZpVWepAQw"
+                trailerId = "EUZpVWepAQw"
             )
         )
 
@@ -74,7 +74,7 @@ class PopulateDbAsyncTask(db: MovieDatabase?) : AsyncTask<Unit, Unit, Unit>() {
                 year = "2019",
                 director = "Jon Favreu",
                 synopsis = "Simba had to run away and save herself from the trap of her uncle, Scar, who was secretly eyeing her father\\'s throne. As an adult, with the help of Timon and Pumbaa, he returned to seize his rights.",
-                trailers = "https://www.youtube.com/watch?v=7TavVZMewpY"
+                trailerId = "7TavVZMewpY"
             )
         )
 
@@ -85,7 +85,7 @@ class PopulateDbAsyncTask(db: MovieDatabase?) : AsyncTask<Unit, Unit, Unit>() {
                 year = "2019",
                 director = "Josh Cooley",
                 synopsis = "Woody always feels confident about his position in the world, and his priority is to look after his child, be it Andy or Bonnie. But when Bonnie adds a new toy named Forky in her toy room, a trip with old and new friends will bring Woody to witness how big the world is for a toy like her.",
-                trailers = "https://www.youtube.com/watch?v=wmiIUN-7qhE"
+                trailerId = "wmiIUN-7qhE"
             )
         )
     }

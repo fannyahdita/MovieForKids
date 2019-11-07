@@ -11,7 +11,7 @@ interface KidsPhotoDao {
     fun insert(kidsPhoto: KidsPhoto)
 
     @Query("SELECT * FROM photo WHERE id=:photoId")
-    fun getPhoto(photoId: Int): LiveData<KidsPhoto>
+    fun detailPhoto(photoId: Int): LiveData<KidsPhoto>
 
     @Query("DELETE FROM photo")
     fun deleteAllPhotos()

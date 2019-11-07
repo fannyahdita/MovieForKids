@@ -15,8 +15,8 @@ class KidsPhotoViewModel(application: Application) : AndroidViewModel(applicatio
         repository.insert(kidsPhoto)
     }
 
-    fun getPhoto(photoId: Int): LiveData<KidsPhoto> {
-        photo = repository.getPhoto(photoId)
+    fun detailPhoto(photoId: Int): LiveData<KidsPhoto> {
+        photo = repository.detailPhoto(photoId)
         return photo
     }
 
