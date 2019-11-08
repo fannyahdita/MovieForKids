@@ -14,9 +14,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:fontFamily="@font/quicksand_bold"
-        android:textColor="@color/pink"
         android:maxLines="2"
         android:text="@string/list_title"
+        android:textColor="@color/pink"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@id/button_gallery"
         app:layout_constraintEnd_toStartOf="@id/button_gallery"
@@ -26,13 +26,13 @@
     <Button
         android:id="@+id/button_gallery"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:layout_marginEnd="10dp"
-        android:text="@string/to_gallery"
         android:background="@color/soft_pink"
-        android:textColor="@color/dark_grey"
         android:fontFamily="@font/quicksand_bold"
-        android:padding="2dp"
+        android:padding="5dp"
+        android:text="@string/to_gallery"
+        android:textColor="@color/dark_grey"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -40,8 +40,8 @@
         android:id="@+id/separator"
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="@color/separator"
         android:layout_marginTop="10dp"
+        android:background="@color/separator"
         app:layout_constraintTop_toBottomOf="@id/hello_text" />
 
     <androidx.recyclerview.widget.RecyclerView

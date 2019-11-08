@@ -27,7 +27,7 @@ class KidsPhotoRepository(application: Application) {
         return photo
     }
 
-    fun getAllPhotos() : LiveData<List<KidsPhoto>> {
+    fun getAllPhotos(): LiveData<List<KidsPhoto>> {
         return allPhotos
     }
 

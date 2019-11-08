@@ -9,7 +9,7 @@ import androidx.room.Query
 interface MovieDao {
 
     @Insert
-    fun insert (movie: Movie)
+    fun insert(movie: Movie)
 
     @Query("DELETE FROM movie WHERE id=:movieId")
     fun deleteMovie(movieId: Int)
@@ -20,6 +20,6 @@ interface MovieDao {
     @Query("SELECT * FROM movie WHERE id=:movieId")
     fun detailMovie(movieId: Int): LiveData<Movie>
 
-    @Query("SELECT * FROM movie" )
+    @Query("SELECT * FROM movie")
     fun getAllMovies(): LiveData<List<Movie>>
 }

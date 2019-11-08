@@ -88,5 +88,27 @@ class PopulateDbAsyncTask(db: MovieDatabase?) : AsyncTask<Unit, Unit, Unit>() {
                 trailerId = "wmiIUN-7qhE"
             )
         )
+
+        movieDao?.insert(
+            Movie(
+                posterRes = R.drawable.ralph_2,
+                title = "Ralph Breaks the Internet",
+                year = "2018",
+                director = "Rich Moore, Phil Johnston",
+                synopsis = "New adventures of Ralph and Vanellope will continue on Ralph Breaks Internet. 6 years after Wreck-It Ralph, Ralph and Vanellope are now exploring further into cyberspace.",
+                trailerId = "xHpH11hiWfg"
+            )
+        )
+
+        movieDao?.insert(
+            Movie(
+                posterRes = R.drawable.maleficent,
+                title = "Maleficent: Mistress of Evil",
+                year = "2019",
+                director = "Joachim Rønning",
+                synopsis = "Maleficent is a kindhearted fairy, who was betrayed by his sweetheart, Stefan. Soon, he will curse his daughter, Aurora, in order to return the thirst for justice.",
+                trailerId = "n0OFH4xpPr4"
+            )
+        )
     }
 }

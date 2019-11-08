@@ -50,7 +50,7 @@
 
     //gallery
     <string name="empty_text_gallery">Oops! Kamu tidak punya foto</string>
-    <string name="empty_text_rating">Oops!Kamu belum memberi nilai pada film apapun</string>
+    <string name="empty_text_rating">Oops! Kamu belum memberi nilai pada film apapun</string>
     <string name="desc_photo_detail"><![CDATA[<b>Deskripsi:</b> %s]]></string>
     <string name="rate_movie">Beri nilai film</string>
     <string name="photos_tabs">Foto</string>

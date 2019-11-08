@@ -30,10 +30,10 @@ class PhotoGalleryFragment : Fragment() {
         viewpager_gallery.adapter = ViewPagerAdapter(childFragmentManager, context)
         tabs.setupWithViewPager(viewpager_gallery)
 
-            button_add_photo_list.setOnClickListener {
-                Navigation.findNavController(it)
-                    .navigate(PhotoGalleryFragmentDirections.actionToAddPhoto())
-            }
+        button_add_photo_list.setOnClickListener {
+            Navigation.findNavController(it)
+                .navigate(PhotoGalleryFragmentDirections.actionToAddPhoto())
+        }
 
         button_add_rate_list.setOnClickListener {
             Navigation.findNavController(it)

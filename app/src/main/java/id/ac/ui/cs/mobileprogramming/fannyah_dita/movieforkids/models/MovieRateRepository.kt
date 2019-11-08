@@ -24,7 +24,8 @@ class MovieRateRepository(application: Application) {
         InsertRatingAsyncTask(movieRateDao).execute(movieRate)
     }
 
-    private class InsertRatingAsyncTask(val movieRateDao: MovieRateDao) : AsyncTask<MovieRate, Unit, Unit>() {
+    private class InsertRatingAsyncTask(val movieRateDao: MovieRateDao) :
+        AsyncTask<MovieRate, Unit, Unit>() {
 
         override fun doInBackground(vararg p0: MovieRate?) {
             movieRateDao.insert(p0[0]!!)

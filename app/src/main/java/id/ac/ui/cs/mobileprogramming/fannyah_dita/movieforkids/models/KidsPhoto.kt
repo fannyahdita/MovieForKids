@@ -7,7 +7,8 @@ import androidx.room.PrimaryKey
 data class KidsPhoto(
     var imageUri: String,
     var description: String,
-    var movieTitle: String) {
+    var movieTitle: String
+) {
     @PrimaryKey(autoGenerate = true)
     var id: Int = 0
 }

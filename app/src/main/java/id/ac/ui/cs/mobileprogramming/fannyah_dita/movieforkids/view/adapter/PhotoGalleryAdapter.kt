@@ -13,7 +13,7 @@ import kotlinx.android.synthetic.main.item_photos_list.view.*
 
 class PhotoGalleryAdapter : RecyclerView.Adapter<PhotoGalleryAdapter.ViewHolder>() {
 
-    private var photos : List<KidsPhoto> = ArrayList()
+    private var photos: List<KidsPhoto> = ArrayList()
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val inflater = LayoutInflater.from(parent.context)
@@ -34,7 +34,7 @@ class PhotoGalleryAdapter : RecyclerView.Adapter<PhotoGalleryAdapter.ViewHolder>
         return photos.size
     }
 
-    fun setPhotos (photos: List<KidsPhoto>) {
+    fun setPhotos(photos: List<KidsPhoto>) {
         this.photos = photos
         notifyDataSetChanged()
     }

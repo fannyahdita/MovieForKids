@@ -10,7 +10,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
-import androidx.activity.addCallback
 import androidx.core.content.ContextCompat.checkSelfPermission
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProviders
@@ -97,8 +96,10 @@ class AddPhotoFragment : Fragment() {
 
         button_submit_enable.setOnClickListener {
             if (movie_edittext.text.toString().trim().isBlank()
-                || describe_textview.text.toString().trim().isBlank()) {
-                Toast.makeText(activity,getString(R.string.submit_photo_toast), Toast.LENGTH_SHORT).show()
+                || describe_textview.text.toString().trim().isBlank()
+            ) {
+                Toast.makeText(activity, getString(R.string.submit_photo_toast), Toast.LENGTH_SHORT)
+                    .show()
             } else {
                 addPhotoToDb()
                 Navigation.findNavController(it)

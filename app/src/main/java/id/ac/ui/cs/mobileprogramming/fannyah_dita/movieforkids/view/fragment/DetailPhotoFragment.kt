@@ -9,8 +9,8 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
-import id.ac.ui.cs.mobileprogramming.fannyah_dita.movieforkids.viewmodel.KidsPhotoViewModel
 import id.ac.ui.cs.mobileprogramming.fannyah_dita.movieforkids.R
+import id.ac.ui.cs.mobileprogramming.fannyah_dita.movieforkids.viewmodel.KidsPhotoViewModel
 import kotlinx.android.synthetic.main.fragment_photo_detail.*
 
 class DetailPhotoFragment : Fragment() {
@@ -46,7 +46,8 @@ class DetailPhotoFragment : Fragment() {
             photo?.let {
                 title_photo_detail.text = photo.movieTitle.capitalize()
                 kidsphoto_detail.setImageURI(Uri.parse(photo.imageUri))
-                desc_photo_detail.text = Html.fromHtml(getString(R.string.desc_photo_detail, photo.description))
+                desc_photo_detail.text =
+                    Html.fromHtml(getString(R.string.desc_photo_detail, photo.description))
             }
         })
     }

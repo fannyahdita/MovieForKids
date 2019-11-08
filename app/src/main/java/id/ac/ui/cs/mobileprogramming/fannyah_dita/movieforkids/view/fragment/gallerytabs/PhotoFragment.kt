@@ -10,10 +10,10 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import id.ac.ui.cs.mobileprogramming.fannyah_dita.movieforkids.viewmodel.KidsPhotoViewModel
-import id.ac.ui.cs.mobileprogramming.fannyah_dita.movieforkids.view.adapter.PhotoGalleryAdapter
 import id.ac.ui.cs.mobileprogramming.fannyah_dita.movieforkids.R
 import id.ac.ui.cs.mobileprogramming.fannyah_dita.movieforkids.models.KidsPhoto
+import id.ac.ui.cs.mobileprogramming.fannyah_dita.movieforkids.view.adapter.PhotoGalleryAdapter
+import id.ac.ui.cs.mobileprogramming.fannyah_dita.movieforkids.viewmodel.KidsPhotoViewModel
 import kotlinx.android.synthetic.main.fragment_recyclerview_gallery.*
 import kotlin.math.roundToInt
 

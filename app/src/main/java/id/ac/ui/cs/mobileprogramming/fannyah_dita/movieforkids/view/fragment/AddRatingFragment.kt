@@ -9,9 +9,9 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProviders
 import androidx.navigation.Navigation
 import id.ac.ui.cs.mobileprogramming.fannyah_dita.movieforkids.R
+import id.ac.ui.cs.mobileprogramming.fannyah_dita.movieforkids.models.MovieRate
 import id.ac.ui.cs.mobileprogramming.fannyah_dita.movieforkids.viewmodel.MovieRateViewModel
 import kotlinx.android.synthetic.main.fragment_add_rating.*
-import id.ac.ui.cs.mobileprogramming.fannyah_dita.movieforkids.models.MovieRate
 
 class AddRatingFragment : Fragment() {
 
@@ -31,13 +31,17 @@ class AddRatingFragment : Fragment() {
         viewModel = ViewModelProviders.of(this).get(MovieRateViewModel::class.java)
 
         button_submit_rating.setOnClickListener {
-            if(rate_edittext.text.toString().trim().isBlank() ||
-                    movie_edittext.text.toString().trim().isBlank()) {
-                Toast.makeText(activity, getString(R.string.submit_rating_toast), Toast.LENGTH_LONG).show()
-            } else if (Integer.parseInt(rate_edittext.text.toString()) > 5 || Integer.parseInt(rate_edittext.text.toString()) < 1){
+            if (rate_edittext.text.toString().trim().isBlank() ||
+                movie_edittext.text.toString().trim().isBlank()
+            ) {
+                Toast.makeText(activity, getString(R.string.submit_rating_toast), Toast.LENGTH_LONG)
+                    .show()
+            } else if (Integer.parseInt(rate_edittext.text.toString()) > 5 || Integer.parseInt(
+                    rate_edittext.text.toString()
+                ) < 1
+            ) {
                 rate_edittext.error = getString(R.string.rate_edittext_error)
-            }
-            else {
+            } else {
                 addRatingToDb()
                 Navigation.findNavController(it)
                     .navigate(AddRatingFragmentDirections.actionToGallery4())
