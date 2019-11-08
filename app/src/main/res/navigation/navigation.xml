@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<navigation
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/navigationGraph"
     app:startDestination="@id/movie_list_fragment">
@@ -11,10 +10,10 @@
         android:label="MovieListFragment">
         <action
             android:id="@+id/action_to_detail_fragment"
-            app:destination="@id/movie_detail_fragment"/>
+            app:destination="@id/movie_detail_fragment" />
         <action
             android:id="@+id/action_to_gallery"
-            app:destination="@id/photo_gallery_fragment"/>
+            app:destination="@id/photo_gallery_fragment" />
     </fragment>
     <fragment
         android:id="@+id/movie_detail_fragment"
@@ -22,11 +21,11 @@
         android:label="MovieDetailFragment">
         <action
             android:id="@+id/action_to_list_fragment"
-            app:destination="@id/movie_list_fragment"/>
+            app:destination="@id/movie_list_fragment" />
         <argument
             android:name="id"
             android:defaultValue="0"
-            app:argType="integer"/>
+            app:argType="integer" />
     </fragment>
     <fragment
         android:id="@+id/photo_gallery_fragment"
@@ -34,16 +33,16 @@
         android:label="PhotoGalleryFragment">
         <action
             android:id="@+id/action_to_list_fragment_2"
-            app:destination="@id/movie_list_fragment"/>
+            app:destination="@id/movie_list_fragment" />
         <action
             android:id="@+id/action_to_add_photo"
-            app:destination="@id/add_photo_fragment"/>
+            app:destination="@id/add_photo_fragment" />
         <action
             android:id="@+id/action_to_detail_photo"
-            app:destination="@id/detail_photo_fragment"/>
+            app:destination="@id/detail_photo_fragment" />
         <action
             android:id="@+id/action_to_add_rating"
-            app:destination="@id/add_rating_fragment"/>
+            app:destination="@id/add_rating_fragment" />
     </fragment>
     <fragment
         android:id="@+id/add_photo_fragment"
@@ -61,11 +60,11 @@
         android:label="DetailPhotoFragment">
         <action
             android:id="@+id/action_to_gallery_3"
-            app:destination="@id/photo_gallery_fragment"/>
+            app:destination="@id/photo_gallery_fragment" />
         <argument
             android:name="id"
             android:defaultValue="0"
-            app:argType="integer"/>
+            app:argType="integer" />
     </fragment>
     <fragment
         android:id="@+id/add_rating_fragment"

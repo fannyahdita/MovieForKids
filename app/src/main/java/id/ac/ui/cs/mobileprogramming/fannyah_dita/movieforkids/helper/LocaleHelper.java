@@ -10,10 +10,6 @@ import android.preference.PreferenceManager;
 
 import java.util.Locale;
 
-/**
- * source : https://devdeeds.com/android-change-language-at-runtime/
- */
-
 public class LocaleHelper {
 
     private static final String SELECTED_LANGUAGE = "Locale.Helper.Selected.Language";
