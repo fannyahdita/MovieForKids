@@ -7,6 +7,6 @@ Aplikasi MovieForKids merupakan aplikasi yang dapat membantu orang tua untuk mem
 
 ## REFERENSI
 
-Gupta, Anubhav (2018, January 14). Building an Android App using Android Architecture Components: Room, ViewModel, and LiveData. Retrieved from: https://proandroiddev.com/building-an-android-app-using-android-architecture-components-room-viewmodel-and-livedata-702a0af899ae
-Thakur, Nistha (2019, May 15). How to Create Android Notification with Broadcast Receiver. Retrieved from tutorialspoint: https://www.tutorialspoint.com/how-to-create-android-notification-with-broadcastreceiver
-Jayakrishnan (2017, October 4). Android Change Language at  Runtime Programmatically. Retrieved from devdeeds: https://devdeeds.com/android-change-language-at-runtime/
+- Gupta, Anubhav (2018, January 14). Building an Android App using Android Architecture Components: Room, ViewModel, and LiveData. Retrieved from: https://proandroiddev.com/building-an-android-app-using-android-architecture-components-room-viewmodel-and-livedata-702a0af899ae
+- Thakur, Nistha (2019, May 15). How to Create Android Notification with Broadcast Receiver. Retrieved from tutorialspoint: https://www.tutorialspoint.com/how-to-create-android-notification-with-broadcastreceiver
+- Jayakrishnan (2017, October 4). Android Change Language at  Runtime Programmatically. Retrieved from devdeeds: https://devdeeds.com/android-change-language-at-runtime/
