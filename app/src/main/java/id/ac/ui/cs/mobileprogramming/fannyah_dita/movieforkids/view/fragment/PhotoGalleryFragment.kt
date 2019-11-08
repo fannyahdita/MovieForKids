@@ -27,7 +27,7 @@ class PhotoGalleryFragment : Fragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
 
-        viewpager_gallery.adapter = ViewPagerAdapter(childFragmentManager)
+        viewpager_gallery.adapter = ViewPagerAdapter(childFragmentManager, context)
         tabs.setupWithViewPager(viewpager_gallery)
 
             button_add_photo_list.setOnClickListener {

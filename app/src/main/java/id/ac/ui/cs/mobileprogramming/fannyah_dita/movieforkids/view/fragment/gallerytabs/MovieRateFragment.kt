@@ -1,21 +1,18 @@
 package id.ac.ui.cs.mobileprogramming.fannyah_dita.movieforkids.view.fragment.gallerytabs
 
 import android.os.Bundle
-import android.util.DisplayMetrics
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
-import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.RecyclerView
+import androidx.recyclerview.widget.LinearLayoutManager
 import id.ac.ui.cs.mobileprogramming.fannyah_dita.movieforkids.R
 import id.ac.ui.cs.mobileprogramming.fannyah_dita.movieforkids.models.MovieRate
 import id.ac.ui.cs.mobileprogramming.fannyah_dita.movieforkids.view.adapter.MovieRateAdapter
 import id.ac.ui.cs.mobileprogramming.fannyah_dita.movieforkids.viewmodel.MovieRateViewModel
 import kotlinx.android.synthetic.main.fragment_recyclerview_rating.*
-import kotlin.math.roundToInt
 
 class MovieRateFragment : Fragment() {
 
@@ -50,20 +47,12 @@ class MovieRateFragment : Fragment() {
     }
 
     private fun setLayoutInFragment(length: Int) {
-        val display = activity?.windowManager?.defaultDisplay
-        val outMetrics = DisplayMetrics()
-        display?.getMetrics(outMetrics)
-
-        val density = resources.displayMetrics.density
-        val dpWidth = outMetrics.widthPixels / density
-        val columns = (dpWidth / 150).roundToInt()
 
         if (length > 0) {
             recyclerview_rating.visibility = View.VISIBLE
             empty_photo_container_rating.visibility = View.GONE
 
-            recyclerview_rating.layoutManager =
-                GridLayoutManager(activity, columns) as RecyclerView.LayoutManager?
+            recyclerview_rating.layoutManager = LinearLayoutManager(context)
             recyclerview_rating.adapter = movieRateAdapter
         } else {
             recyclerview_rating.visibility = View.GONE
