@@ -46,7 +46,8 @@
     <string name="list_title">Recommendation(s) for you</string>
 
     //gallery
-    <string name="empty_text">Oops! You\'ve got no photo</string>
+    <string name="empty_text_gallery">Oops! You\'ve got no photo</string>
+    <string name="empty_text_rating">Oops! You haven\'t rate any movies</string>
     <string name="desc_photo_detail"><![CDATA[<b>Description:</b> %s]]></string>
     <string name="rate_movie">Rate movie</string>
 
@@ -67,6 +68,7 @@
     <string name="photo_saved">Your photo is saved! Hope you and your kid(s) had a great movie day!</string>
     <string name="submit_photo_toast">You have to fill everything!</string>
     <string name="submit_rating_toast">You have to fill everything!</string>
+    <string name="rate_edittext_error">Fill with number between 1 to 5</string>
 
     //notification
     <string name="notif_welcome">"Welcome to MovieForKids! Let's watch something today"</string>

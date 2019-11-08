@@ -49,7 +49,8 @@
     <string name="list_title">Rekomendasi untukmu</string>
 
     //gallery
-    <string name="empty_text">Oops! Kamu tidak punya foto</string>
+    <string name="empty_text_gallery">Oops! Kamu tidak punya foto</string>
+    <string name="empty_text_rating">Oops!Kamu belum memberi nilai pada film apapun</string>
     <string name="desc_photo_detail"><![CDATA[<b>Deskripsi:</b> %s]]></string>
     <string name="rate_movie">Beri nilai film</string>
 
@@ -70,6 +71,7 @@
     <string name="photo_saved">Foto telah disimpan! Semoga kamu dan si kecil mendapatkan pengalaman menonton yang menyenangkan!</string>
     <string name="submit_photo_toast">Kamu harus mengisi semua field</string>
     <string name="submit_rating_toast">Kamu harus mengisi semua field</string>
+    <string name="rate_edittext_error">Isi dengan angka dari 1 sampai 5</string>
 
     //Notification
     <string name="notif_welcome">Selamat datang di MovieForKids! Ayo kita nonton sesuatu hari ini</string>

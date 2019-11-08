@@ -34,7 +34,10 @@ class AddRatingFragment : Fragment() {
             if(rate_edittext.text.toString().trim().isBlank() ||
                     movie_edittext.text.toString().trim().isBlank()) {
                 Toast.makeText(activity, getString(R.string.submit_rating_toast), Toast.LENGTH_LONG).show()
-            } else {
+            } else if (Integer.parseInt(rate_edittext.text.toString()) > 5 || Integer.parseInt(rate_edittext.text.toString()) < 1){
+                rate_edittext.error = getString(R.string.rate_edittext_error)
+            }
+            else {
                 addRatingToDb()
                 Navigation.findNavController(it)
                     .navigate(AddRatingFragmentDirections.actionToGallery4())
