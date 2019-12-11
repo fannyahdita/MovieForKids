@@ -1,6 +1,7 @@
 package id.ac.ui.cs.mobileprogramming.fannyah_dita.movieforkids.view.fragment
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -20,8 +21,13 @@ class MovieListFragment : Fragment() {
         fun getInstance() = MovieListFragment()
     }
 
+    init {
+        System.loadLibrary("movieforkids")
+    }
+
     private lateinit var viewModel: MovieViewModel
     private val movieAdapter = MovieAdapter()
+    external fun randommov() : Int
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -35,6 +41,9 @@ class MovieListFragment : Fragment() {
         super.onActivityCreated(savedInstanceState)
 
         viewModel = ViewModelProviders.of(this).get(MovieViewModel::class.java)
+
+        val indexRandomMovie = randommov()
+        Log.wtf("RAND : ", indexRandomMovie.toString())
 
         movies_recyclerview.layoutManager = LinearLayoutManager(context)
         movies_recyclerview.adapter = movieAdapter
