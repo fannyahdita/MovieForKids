@@ -79,4 +79,10 @@
     //Notification
     <string name="notif_welcome">Selamat datang di MovieForKids! Ayo kita nonton sesuatu hari ini</string>
 
+    //dialog message
+    <string name="wifi_msg">Aplikasi ini membutuhkan koneksi internet.</string>
+    <string name="wifi_title">Wifi Required</string>
+    <string name="photo_msg">Izin untuk mengakses storage dibutuhkan.</string>
+    <string name="photo_title">Access Required</string>
+
 </resources>

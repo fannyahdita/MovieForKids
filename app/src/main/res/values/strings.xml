@@ -76,4 +76,10 @@
     //notification
     <string name="notif_welcome">"Welcome to MovieForKids! Let's watch something today"</string>
 
+    //dialog message
+    <string name="wifi_msg">This application might require internet connection, it will be better if you turn on the wifi</string>
+    <string name="wifi_title">Wifi Required</string>
+    <string name="photo_msg">Permission to access the external storage is needed.</string>
+    <string name="photo_title">Access Required</string>
+
 </resources>

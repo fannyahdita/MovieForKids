@@ -1,6 +1,9 @@
 package id.ac.ui.cs.mobileprogramming.fannyah_dita.movieforkids.view.activity
 
+import android.content.Context
+import android.net.wifi.WifiManager
 import android.os.Bundle
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import id.ac.ui.cs.mobileprogramming.fannyah_dita.movieforkids.R
 import id.ac.ui.cs.mobileprogramming.fannyah_dita.movieforkids.helper.LocaleHelper
@@ -22,6 +25,23 @@ class MovieActivity : AppCompatActivity() {
                 changeLang("en")
             }
         }
+
+        val wifiManager = applicationContext.getSystemService(Context.WIFI_SERVICE) as WifiManager
+        if (!wifiManager.isWifiEnabled) {
+            val builder = AlertDialog.Builder(this)
+            builder.setMessage(getString(R.string.wifi_msg))
+                .setTitle(getString(R.string.wifi_title))
+
+            builder.setPositiveButton("ENABLE WIFI") { _, _ ->
+                wifiManager.isWifiEnabled = true
+            }
+            builder.setNegativeButton("I'M GOOD") { _, _ ->
+
+            }
+            val dialog = builder.create()
+            dialog.show()
+        }
+
     }
 
     private fun changeLang(lang: String) {

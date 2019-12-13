@@ -1,5 +1,6 @@
 package id.ac.ui.cs.mobileprogramming.fannyah_dita.movieforkids.view.fragment
 
+import android.app.AlertDialog
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
@@ -27,7 +28,7 @@ class MovieListFragment : Fragment() {
 
     private lateinit var viewModel: MovieViewModel
     private val movieAdapter = MovieAdapter()
-    external fun randommov() : Int
+    external fun randommov(): Int
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -44,6 +45,8 @@ class MovieListFragment : Fragment() {
 
         val indexRandomMovie = randommov()
         Log.wtf("RAND : ", indexRandomMovie.toString())
+
+        showMovieRecommendation(indexRandomMovie)
 
         movies_recyclerview.layoutManager = LinearLayoutManager(context)
         movies_recyclerview.adapter = movieAdapter
@@ -63,5 +66,19 @@ class MovieListFragment : Fragment() {
                 movieAdapter.setMovies(list)
             }
         )
+    }
+
+    private fun showMovieRecommendation(index: Int) {
+        viewModel.detailMovie(index).observe(this, Observer {
+            val builder = AlertDialog.Builder(context)
+            builder.setMessage(it.title).setTitle("What should we watch today?")
+
+            builder.setPositiveButton("OK"){_, _ -> }
+
+            val dialog = builder.create()
+            dialog.show()
+
+        })
+
     }
 }

@@ -67,8 +67,8 @@ class AddPhotoFragment : Fragment() {
                         ) {
 
                             val builder = AlertDialog.Builder(context)
-                            builder.setMessage("Permission to access the external storage is needed.")
-                                .setTitle("Permission required")
+                            builder.setMessage(getString(R.string.photo_msg))
+                                .setTitle(getString(R.string.photo_title))
 
                             builder.setPositiveButton("OK") { dialog, id ->
                                 ActivityCompat.requestPermissions(
