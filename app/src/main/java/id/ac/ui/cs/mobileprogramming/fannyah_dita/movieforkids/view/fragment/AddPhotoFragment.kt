@@ -2,14 +2,17 @@ package id.ac.ui.cs.mobileprogramming.fannyah_dita.movieforkids.view.fragment
 
 import android.Manifest
 import android.app.Activity
+import android.app.AlertDialog
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.os.Build
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat.checkSelfPermission
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProviders
@@ -45,25 +48,64 @@ class AddPhotoFragment : Fragment() {
 
         button_add_photo.setOnClickListener {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-                if (activity?.applicationContext?.let { activity ->
-                        checkSelfPermission(
-                            activity,
-                            Manifest.permission.WRITE_EXTERNAL_STORAGE
+                if (checkSelfPermission(
+                        context!!,
+                        Manifest.permission.READ_EXTERNAL_STORAGE
+                    ) == PackageManager.PERMISSION_DENIED
+                ) {
+                    button_submit_photo.setBackgroundColor(resources.getColor(R.color.grey))
+                    button_submit_photo.isClickable = false
+                    if (ActivityCompat.shouldShowRequestPermissionRationale(
+                            requireActivity(),
+                            Manifest.permission.READ_EXTERNAL_STORAGE
+                        )
+                    ) {
+                        if (ActivityCompat.shouldShowRequestPermissionRationale(
+                                requireActivity(),
+                                Manifest.permission.READ_EXTERNAL_STORAGE
+                            )
+                        ) {
+
+                            val builder = AlertDialog.Builder(context)
+                            builder.setMessage("Permission to access the external storage is needed.")
+                                .setTitle("Permission required")
+
+                            builder.setPositiveButton("OK") { dialog, id ->
+                                ActivityCompat.requestPermissions(
+                                    requireActivity(),
+                                    arrayOf(Manifest.permission.READ_EXTERNAL_STORAGE),
+                                    PERMISSION_CODE
+                                )
+                            }
+
+                            val dialog = builder.create()
+                            dialog.show()
+                        }
+                    } else {
+                        ActivityCompat.requestPermissions(
+                            requireActivity(),
+                            arrayOf(Manifest.permission.READ_EXTERNAL_STORAGE),
+                            PERMISSION_CODE
                         )
                     }
-                    != PackageManager.PERMISSION_GRANTED) {
-                    val permissions = arrayOf(Manifest.permission.READ_EXTERNAL_STORAGE)
-                    requestPermissions(permissions, PERMISSION_CODE)
                 } else {
                     pickImageFromGallery()
+                    button_submit_photo.setBackgroundColor(resources.getColor(R.color.soft_pink))
+                    button_submit_photo.isClickable = true
+                    button_add_photo.visibility = View.GONE
+                    button_submit_photo.visibility = View.VISIBLE
+                    button_change_photo.visibility = View.VISIBLE
+
                 }
             } else {
                 pickImageFromGallery()
-            }
+                button_submit_photo.setBackgroundColor(resources.getColor(R.color.soft_pink))
+                button_submit_photo.isClickable = true
+                button_add_photo.visibility = View.GONE
+                button_submit_photo.visibility = View.VISIBLE
+                button_change_photo.visibility = View.VISIBLE
 
-            button_add_photo.visibility = View.GONE
-            button_submit_photo.visibility = View.VISIBLE
-            button_change_photo.visibility = View.VISIBLE
+            }
         }
 
         button_submit_photo.setOnClickListener {
@@ -100,7 +142,8 @@ class AddPhotoFragment : Fragment() {
             ) {
                 Toast.makeText(activity, getString(R.string.submit_photo_toast), Toast.LENGTH_SHORT)
                     .show()
-            } else {
+            }
+            else {
                 addPhotoToDb()
                 Navigation.findNavController(it)
                     .navigate(AddPhotoFragmentDirections.actionToGallery2())

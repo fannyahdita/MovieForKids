@@ -73,6 +73,7 @@
     <string name="photo_saved">Foto telah disimpan! Semoga kamu dan si kecil mendapatkan pengalaman menonton yang menyenangkan!</string>
     <string name="submit_photo_toast">Kamu harus mengisi semua field</string>
     <string name="submit_rating_toast">Kamu harus mengisi semua field</string>
+    <string name="submit_photo_is_not_submit">Kamu harus unggah foto!</string>
     <string name="rate_edittext_error">Isi dengan angka dari 1 sampai 5</string>
 
     //Notification

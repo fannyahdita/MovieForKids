@@ -70,6 +70,7 @@
     <string name="photo_saved">Your photo is saved! Hope you and your kid(s) had a great movie day!</string>
     <string name="submit_photo_toast">You have to fill everything!</string>
     <string name="submit_rating_toast">You have to fill everything!</string>
+    <string name="submit_photo_is_not_submit">You have to submit photo first!</string>
     <string name="rate_edittext_error">Fill with number between 1 to 5</string>
 
     //notification
