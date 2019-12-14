@@ -29,9 +29,22 @@
         android:layout_marginEnd="10dp"
         android:background="@color/soft_pink"
         android:text="@string/rate_movie"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/button_add_reminder"
         app:layout_constraintHorizontal_weight="1"
         app:layout_constraintStart_toEndOf="@id/button_add_photo_list"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_add_reminder"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@color/soft_pink"
+        android:text="Add reminder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toEndOf="@id/button_add_rate_list"
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.constraintlayout.widget.ConstraintLayout

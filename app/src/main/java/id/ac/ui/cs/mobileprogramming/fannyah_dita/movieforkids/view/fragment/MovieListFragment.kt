@@ -75,8 +75,10 @@ class MovieListFragment : Fragment() {
 
             builder.setPositiveButton("OK"){_, _ -> }
 
-            val dialog = builder.create()
-            dialog.show()
+            if(!it.title.isNullOrEmpty()) {
+                val dialog = builder.create()
+                dialog.show()
+            }
 
         })
 
