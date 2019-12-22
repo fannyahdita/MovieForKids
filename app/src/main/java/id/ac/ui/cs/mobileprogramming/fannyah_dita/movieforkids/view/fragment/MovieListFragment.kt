@@ -1,6 +1,7 @@
 package id.ac.ui.cs.mobileprogramming.fannyah_dita.movieforkids.view.fragment
 
 import android.app.AlertDialog
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
@@ -15,6 +16,7 @@ import id.ac.ui.cs.mobileprogramming.fannyah_dita.movieforkids.R
 import id.ac.ui.cs.mobileprogramming.fannyah_dita.movieforkids.models.Movie
 import id.ac.ui.cs.mobileprogramming.fannyah_dita.movieforkids.view.adapter.MovieAdapter
 import id.ac.ui.cs.mobileprogramming.fannyah_dita.movieforkids.viewmodel.MovieViewModel
+import id.ac.ui.cs.mobileprogramming.fannyah_dita.movieforkids.view.activity.MusicActivity
 import kotlinx.android.synthetic.main.fragment_movie_list.*
 
 class MovieListFragment : Fragment() {
@@ -56,6 +58,11 @@ class MovieListFragment : Fragment() {
                 .navigate(MovieListFragmentDirections.actionToGallery())
         }
 
+        button_music.setOnClickListener {
+            val intent = Intent(activity, MusicActivity::class.java)
+            startActivity(intent)
+        }
+
         observeViewModel()
 
     }
@@ -69,16 +76,20 @@ class MovieListFragment : Fragment() {
     }
 
     private fun showMovieRecommendation(index: Int) {
-        viewModel.detailMovie(index).observe(this, Observer {
-            val builder = AlertDialog.Builder(context)
-            builder.setMessage(it.title).setTitle("What should we watch today?")
 
-            builder.setPositiveButton("OK"){_, _ -> }
+        viewModel.detailMovie(index).observe(this, Observer {
 
             if(!it.title.isNullOrEmpty()) {
+                val builder = AlertDialog.Builder(context)
+                builder.setMessage(it.title).setTitle("What should we watch today?")
+
+                builder.setPositiveButton("OK") { _, _ -> }
+
+
                 val dialog = builder.create()
                 dialog.show()
             }
+
 
         })
 

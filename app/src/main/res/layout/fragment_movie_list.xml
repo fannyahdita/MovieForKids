@@ -18,23 +18,46 @@
         android:text="@string/list_title"
         android:textColor="@color/pink"
         android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@id/button_gallery"
-        app:layout_constraintEnd_toStartOf="@id/button_gallery"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/button_gallery" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+<!--        app:layout_constraintBottom_toBottomOf="@id/button_gallery"-->
+<!--        app:layout_constraintEnd_toStartOf="@id/button_gallery"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="@id/button_gallery" />-->
 
     <Button
         android:id="@+id/button_gallery"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="40dp"
         android:layout_marginEnd="10dp"
         android:background="@color/soft_pink"
         android:fontFamily="@font/quicksand_bold"
         android:padding="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="10dp"
         android:text="@string/to_gallery"
         android:textColor="@color/dark_grey"
+        app:layout_constraintEnd_toStartOf="@id/button_music"
+        app:layout_constraintTop_toBottomOf="@id/hello_text"
+        app:layout_constraintStart_toStartOf="parent"/>
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <Button
+        android:id="@+id/button_music"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="10dp"
+        android:background="@color/soft_pink"
+        android:fontFamily="@font/quicksand_bold"
+        android:padding="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="10dp"
+        android:text="Play Music"
+        android:textColor="@color/dark_grey"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/hello_text"
+        app:layout_constraintStart_toEndOf="@id/button_gallery"/>
 
     <View
         android:id="@+id/separator"
@@ -42,7 +65,7 @@
         android:layout_height="1dp"
         android:layout_marginTop="10dp"
         android:background="@color/separator"
-        app:layout_constraintTop_toBottomOf="@id/hello_text" />
+        app:layout_constraintTop_toBottomOf="@id/button_gallery" />
 
 <!--    <androidx.cardview.widget.CardView-->
 <!--        android:id="@+id/random"-->

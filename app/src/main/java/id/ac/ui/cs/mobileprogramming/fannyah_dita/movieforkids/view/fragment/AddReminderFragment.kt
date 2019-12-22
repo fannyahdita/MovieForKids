@@ -1,7 +1,7 @@
 package id.ac.ui.cs.mobileprogramming.fannyah_dita.movieforkids.view.fragment
 
+import android.app.Notification
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -10,10 +10,12 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.Navigation
 import id.ac.ui.cs.mobileprogramming.fannyah_dita.movieforkids.R
 import kotlinx.android.synthetic.main.fragment_add_reminder.*
-import java.util.*
 
-@Suppress("IMPLICIT_CAST_TO_ANY")
+
 class AddReminderFragment : Fragment() {
+
+    val NOTIFICATION_CHANNEL_ID = "10001"
+    private val default_notification_channel_id = "default"
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -30,7 +32,8 @@ class AddReminderFragment : Fragment() {
 
         button_submit_reminder.setOnClickListener {
 
-            val date = "${reminder_date.dayOfMonth}/${reminder_date.month+1}/${reminder_date.year}"
+            val date =
+                "${reminder_date.dayOfMonth}/${reminder_date.month + 1}/${reminder_date.year}"
             val time = "${reminder_time.hour}:${reminder_time.minute}"
 
             Toast.makeText(context, "$date $time", Toast.LENGTH_LONG).show()
@@ -38,6 +41,10 @@ class AddReminderFragment : Fragment() {
             Navigation.findNavController(it)
                 .navigate(AddReminderFragmentDirections.actionToGallery5())
         }
+    }
+
+    private fun scheduleNotification(notification: Notification, delay: Long) {
+
     }
 
 }
