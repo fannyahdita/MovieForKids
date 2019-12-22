@@ -79,7 +79,7 @@ class MovieListFragment : Fragment() {
 
         viewModel.detailMovie(index).observe(this, Observer {
 
-            if(!it.title.isNullOrEmpty()) {
+            if(it != null) {
                 val builder = AlertDialog.Builder(context)
                 builder.setMessage(it.title).setTitle("What should we watch today?")
 
