@@ -32,37 +32,37 @@ class SplashActivity : AppCompatActivity() {
             finish()
         }, 3000)
 
-        scheduleNotification(getNotification("Welcome to MovieForKids! Let's watch something today"))
+//        scheduleNotification(getNotification("Welcome to MovieForKids! Let's watch something today"))
     }
 
-    private fun scheduleNotification(notification: Notification) {
-        val notificationIntent = Intent(this, NotificationHelper::class.java)
-        notificationIntent.putExtra(NotificationHelper.NOTIFICATION_ID, 1)
-        notificationIntent.putExtra(NotificationHelper.NOTIFICATION, notification)
-        val pendingIntent = PendingIntent.getBroadcast(
-            this,
-            0,
-            notificationIntent,
-            PendingIntent.FLAG_UPDATE_CURRENT
-        )
-        val futureInMillis = SystemClock.elapsedRealtime() + delay
-        val alarmManager = getSystemService(Context.ALARM_SERVICE) as AlarmManager
-        alarmManager.set(AlarmManager.ELAPSED_REALTIME_WAKEUP, futureInMillis, pendingIntent)
-    }
-
-    private fun getNotification(content: String): Notification {
-        val intent = Intent(this, MovieActivity::class.java)
-        val pendingIntent = TaskStackBuilder.create(application)
-            .addNextIntent(intent)
-            .getPendingIntent(0, PendingIntent.FLAG_UPDATE_CURRENT)
-
-        val builder = NotificationCompat.Builder(this, defaultNotificationChannelId)
-        builder.setContentTitle("MovieForKids")
-        builder.setContentText(content)
-        builder.setSmallIcon(R.drawable.movie_for_kids)
-        builder.setAutoCancel(true)
-        builder.setChannelId(notificationChannelId)
-        builder.setContentIntent(pendingIntent)
-        return builder.build()
-    }
+//    private fun scheduleNotification(notification: Notification) {
+//        val notificationIntent = Intent(this, NotificationHelper::class.java)
+//        notificationIntent.putExtra(NotificationHelper.NOTIFICATION_ID, 1)
+//        notificationIntent.putExtra(NotificationHelper.NOTIFICATION, notification)
+//        val pendingIntent = PendingIntent.getBroadcast(
+//            this,
+//            0,
+//            notificationIntent,
+//            PendingIntent.FLAG_UPDATE_CURRENT
+//        )
+//        val futureInMillis = SystemClock.elapsedRealtime() + delay
+//        val alarmManager = getSystemService(Context.ALARM_SERVICE) as AlarmManager
+//        alarmManager.set(AlarmManager.ELAPSED_REALTIME_WAKEUP, futureInMillis, pendingIntent)
+//    }
+//
+//    private fun getNotification(content: String): Notification {
+//        val intent = Intent(this, MovieActivity::class.java)
+//        val pendingIntent = TaskStackBuilder.create(application)
+//            .addNextIntent(intent)
+//            .getPendingIntent(0, PendingIntent.FLAG_UPDATE_CURRENT)
+//
+//        val builder = NotificationCompat.Builder(this, defaultNotificationChannelId)
+//        builder.setContentTitle("MovieForKids")
+//        builder.setContentText(content)
+//        builder.setSmallIcon(R.drawable.movie_for_kids)
+//        builder.setAutoCancel(true)
+//        builder.setChannelId(notificationChannelId)
+//        builder.setContentIntent(pendingIntent)
+//        return builder.build()
+//    }
 }
