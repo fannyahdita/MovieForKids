@@ -47,6 +47,7 @@
     //movie list
     <string name="to_gallery">Menuju galeri</string>
     <string name="list_title">Rekomendasi untukmu</string>
+    <string name="to_music">Putar lagu</string>
 
     //gallery
     <string name="empty_text_gallery">Oops! Kamu tidak punya foto</string>
@@ -84,5 +85,9 @@
     <string name="wifi_title">Wifi Required</string>
     <string name="photo_msg">Izin untuk mengakses storage dibutuhkan.</string>
     <string name="photo_title">Access Required</string>
+
+    //activity music
+    <string name="play_music">Putar lagu</string>
+    <string name="stop_music">Berhenti</string>
 
 </resources>

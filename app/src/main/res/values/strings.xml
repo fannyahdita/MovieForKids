@@ -44,6 +44,7 @@
     //movie list
     <string name="to_gallery">Go to gallery</string>
     <string name="list_title">Recommendation(s) for you</string>
+    <string name="to_music">Play Music</string>
 
     //gallery
     <string name="empty_text_gallery">Oops! You\'ve got no photo</string>
@@ -81,5 +82,9 @@
     <string name="wifi_title">Wifi Required</string>
     <string name="photo_msg">Permission to access the external storage is needed.</string>
     <string name="photo_title">Access Required</string>
+
+    //activity music
+    <string name="play_music">Start music</string>
+    <string name="stop_music">Stop music</string>
 
 </resources>

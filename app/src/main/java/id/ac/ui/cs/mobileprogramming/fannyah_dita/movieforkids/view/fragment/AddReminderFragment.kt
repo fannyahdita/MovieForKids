@@ -42,12 +42,6 @@ class AddReminderFragment : Fragment() {
 
             val movieTitle = reminder_movie_name.text
 
-//            val date = reminder_date.dayOfMonth
-//            val month = reminder_date.dayOfMonth + 1
-//            val year = reminder_date.year
-//            val hour = reminder_time.hour
-//            val min = reminder_time.minute
-
             val date =
                 "${reminder_date.dayOfMonth}/${reminder_date.month + 1}/${reminder_date.year}"
             val time = "${reminder_time.hour}:${reminder_time.minute}"
