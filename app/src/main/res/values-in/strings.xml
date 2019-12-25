@@ -89,5 +89,5 @@
     //activity music
     <string name="play_music">Putar lagu</string>
     <string name="stop_music">Berhenti</string>
-
+    <string name="title_music">Hakuna Matata (OST Lion King 2019)</string>
 </resources>

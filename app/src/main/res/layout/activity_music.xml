@@ -75,7 +75,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/quicksand_bold"
-            android:text="Hakuna Matata (OST Lion King 2019)"
+            android:text="@string/title_music"
             android:textColor="@color/soft_pink"
             android:textSize="20sp"
             app:layout_constraintBottom_toTopOf="@id/buttonStart"
