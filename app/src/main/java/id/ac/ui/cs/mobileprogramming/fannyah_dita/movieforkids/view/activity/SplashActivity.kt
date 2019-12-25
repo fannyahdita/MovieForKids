@@ -13,31 +13,32 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.NotificationCompat
 import id.ac.ui.cs.mobileprogramming.fannyah_dita.movieforkids.R
 import id.ac.ui.cs.mobileprogramming.fannyah_dita.movieforkids.helper.NotificationHelper
-import java.util.*
 
 
 class SplashActivity : AppCompatActivity() {
     private lateinit var handler: Handler
     private val notificationChannelId = "10001"
     private val defaultNotificationChannelId = "default"
+    private val listOfNotif = listOf("Don't you think The Lion King is a good movie to watch with your little one?",
+        "Do you know that Toy Story 4 has earned 1,073 billion USD? WOW! Click here to watch the trailer",
+        "Abominable is a movie about Yeti. Do you think it's real? Click here to watch the trailer")
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash)
 
-        scheduleNotification(getNotification("Don't you think The Lion King is a good movie to watch with your little one?"), 10000)
-        scheduleNotification(getNotification("Do you know that Toy Story 4 has earned 1,073 billion USD? WOW! Click here to watch the trailer"), 20000)
-        scheduleNotification(getNotification("Abominable is a movie about Yeti. Do you think it's real? Click here to watch the trailer"), 30000)
+        val index = (0 until 2).random()
+        scheduleNotification(getNotification(listOfNotif[index]))
 
         handler = Handler()
         handler.postDelayed({
             val intent = Intent(this@SplashActivity, MovieActivity::class.java)
             startActivity(intent)
             finish()
-        }, 5000)
+        }, 4000)
     }
 
-    private fun scheduleNotification(notification: Notification, delay: Int) {
+    private fun scheduleNotification(notification: Notification) {
         val notificationIntent = Intent(this, NotificationHelper::class.java)
         notificationIntent.putExtra(NotificationHelper.NOTIFICATION_ID, 1)
         notificationIntent.putExtra(NotificationHelper.NOTIFICATION, notification)
@@ -48,7 +49,7 @@ class SplashActivity : AppCompatActivity() {
             PendingIntent.FLAG_UPDATE_CURRENT
         )
 
-        val futureInMillis = SystemClock.elapsedRealtime() + delay
+        val futureInMillis = SystemClock.elapsedRealtime() + 60000
         val alarmManager = getSystemService(Context.ALARM_SERVICE) as AlarmManager
 
         alarmManager.set(AlarmManager.ELAPSED_REALTIME_WAKEUP, futureInMillis, pendingIntent)
