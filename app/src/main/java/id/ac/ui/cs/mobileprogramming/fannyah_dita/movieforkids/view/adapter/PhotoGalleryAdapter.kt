@@ -22,7 +22,7 @@ class PhotoGalleryAdapter : RecyclerView.Adapter<PhotoGalleryAdapter.ViewHolder>
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        holder.view.image_photo_list.setImageURI(Uri.parse((photos.get(position)).imageUri))
+//        holder.view.image_photo_list.setImageURI(Uri.parse((photos.get(position)).imageUri))
         holder.view.title_photo_list.text = photos[position].movieTitle
         holder.view.setOnClickListener {
             Navigation.findNavController(it)

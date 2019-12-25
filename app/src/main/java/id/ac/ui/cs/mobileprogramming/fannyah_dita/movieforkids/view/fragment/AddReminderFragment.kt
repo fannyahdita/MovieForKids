@@ -52,7 +52,7 @@ class AddReminderFragment : Fragment() {
                 .show()
 
             Navigation.findNavController(it)
-                .navigate(AddReminderFragmentDirections.actionToGallery5())
+                .navigate(AddReminderFragmentDirections.actionToListFragment())
         }
     }
 
@@ -98,5 +98,4 @@ class AddReminderFragment : Fragment() {
         return builder.build()
 
     }
-
 }

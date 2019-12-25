@@ -3,7 +3,6 @@ package id.ac.ui.cs.mobileprogramming.fannyah_dita.movieforkids.view.opengl
 import android.content.Context
 import android.opengl.GLSurfaceView
 import android.util.AttributeSet
-import java.util.jar.Attributes
 
 class SplashGLSurfaceView(context: Context, attrs: AttributeSet) : GLSurfaceView(context, attrs) {
 

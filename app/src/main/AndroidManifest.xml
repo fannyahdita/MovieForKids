@@ -40,8 +40,9 @@
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
         <receiver android:name=".helper.NotificationHelper"/>
-        
         <service android:name=".helper.MusicService"/>
+<!--        <service android:name=".helper.RingtoneService"/>-->
+<!--        <receiver android:name=".helper.AlarmReceiver"/>-->
     </application>
 
 </manifest>

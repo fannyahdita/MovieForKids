@@ -14,6 +14,9 @@
         <action
             android:id="@+id/action_to_gallery"
             app:destination="@id/photo_gallery_fragment" />
+        <action
+            android:id="@+id/action_to_add_reminder"
+            app:destination="@id/add_reminder_fragment"/>
     </fragment>
     <fragment
         android:id="@+id/movie_detail_fragment"
@@ -43,9 +46,6 @@
         <action
             android:id="@+id/action_to_add_rating"
             app:destination="@id/add_rating_fragment" />
-        <action
-            android:id="@+id/action_to_add_reminder"
-            app:destination="@id/add_reminder_fragment"/>
     </fragment>
     <fragment
         android:id="@+id/add_photo_fragment"
@@ -84,9 +84,9 @@
         android:name="id.ac.ui.cs.mobileprogramming.fannyah_dita.movieforkids.view.fragment.AddReminderFragment"
         android:label="AddReminderFragment">
         <action
-            android:id="@+id/action_to_gallery_5"
-            app:destination="@id/photo_gallery_fragment"
-            app:popUpTo="@+id/photo_gallery_fragment"
+            android:id="@+id/action_to_list_fragment"
+            app:destination="@id/movie_list_fragment"
+            app:popUpTo="@+id/movie_list_fragment"
             app:popUpToInclusive="false" />
     </fragment>
 

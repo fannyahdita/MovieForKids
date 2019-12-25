@@ -30,7 +30,7 @@ class SplashActivity : AppCompatActivity() {
             val intent = Intent(this@SplashActivity, MovieActivity::class.java)
             startActivity(intent)
             finish()
-        }, 3000)
+        }, 5000)
 
 //        scheduleNotification(getNotification("Welcome to MovieForKids! Let's watch something today"))
     }

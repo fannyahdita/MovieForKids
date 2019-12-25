@@ -63,6 +63,11 @@ class MovieListFragment : Fragment() {
             startActivity(intent)
         }
 
+        button_add_reminder.setOnClickListener {
+            Navigation.findNavController(it)
+                .navigate(MovieListFragmentDirections.actionToAddReminder())
+        }
+
         observeViewModel()
 
     }

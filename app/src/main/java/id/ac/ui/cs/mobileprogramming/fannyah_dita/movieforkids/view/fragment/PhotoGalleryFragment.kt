@@ -39,11 +39,6 @@ class PhotoGalleryFragment : Fragment() {
             Navigation.findNavController(it)
                 .navigate(PhotoGalleryFragmentDirections.actionToAddRating())
         }
-
-        button_add_reminder.setOnClickListener {
-            Navigation.findNavController(it)
-                .navigate(PhotoGalleryFragmentDirections.actionToAddReminder())
-        }
     }
 
 }
